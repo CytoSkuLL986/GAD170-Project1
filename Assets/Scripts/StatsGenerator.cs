@@ -22,8 +22,7 @@ public static class StatsGenerator
         stats.style = Random.Range(1, totalPoints);
         totalPoints -= stats.style;
 
-        stats.luck = Random.Range(1, totalPoints);
-        totalPoints -= stats.style;
+        stats.luck = totalPoints;
 
         
     }
