@@ -31,6 +31,9 @@ public class XPHandler : MonoBehaviour
         GameEvents.PlayerXPGain(100);
         GameEvents.PlayerLevelUp(1);
 
+        _= data.player.xp > 100;
+            data.player.level++;
+
 
     }
 }

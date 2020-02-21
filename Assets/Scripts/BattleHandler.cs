@@ -20,7 +20,7 @@ public static class BattleHandler
 
         float outcome = Random.Range(-1.0f, 1.0f);
 
-         float formula = outcome * data.player.rhythm / data.player.luck / data.player.style;
+         float formula = outcome * data.player.rhythm + data.player.luck - data.player.style;
 
 
         formula = Mathf.Clamp(formula, -1.0f, 1.0f);

@@ -16,10 +16,10 @@ public static class StatsGenerator
     {
         int totalPoints = 10;
 
-        stats.rhythm = Random.Range(1, totalPoints);
+        stats.rhythm = Random.Range(1, totalPoints-2);
         totalPoints -= stats.rhythm;
 
-        stats.style = Random.Range(1, totalPoints);
+        stats.style = Random.Range(1, totalPoints-2);
         totalPoints -= stats.style;
 
         stats.luck = totalPoints;
